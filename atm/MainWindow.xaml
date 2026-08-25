@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WPF App" Height="450" Width="800">
+    <Grid Background="#FF492567">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="528*"/>
+            <ColumnDefinition Width="199*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Enter Account Number:" FontSize="16" Margin="2,10,10,10" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <TextBox x:Name="AccountNumberTextBox" Grid.Row="0" FontSize="16" Margin="177,50,51,10" Width="300" Grid.Column="2"/>
+
+        <StackPanel Grid.Row="1" Margin="2,10,10,10" Orientation="Vertical" Grid.ColumnSpan="3" Grid.Column="1">
+            <Button Content="Withdraw" Click="Withdraw_Click" FontSize="16" Margin="10"/>
+            <Button Content="Deposit" Click="Deposit_Click" FontSize="16" Margin="10"/>
+            <Button Content="Balance Check" Click="BalanceCheck_Click" FontSize="16" Margin="10"/>
+            <Image Height="222" Source="/CAPITALISMLOGO-removebg-preview.png" Stretch="Fill" Width="233"/>
+        </StackPanel>
+    </Grid>
+</Window>

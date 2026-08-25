@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp.WithdrawWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Withdraw" Height="400" Width="400" Background="#FF492567">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="10">
+            <TextBlock Text="Select Amount to Withdraw:" FontSize="16" Margin="10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="500" Width="60" Margin="5" Click="FixedAmount_Click"/>
+                <Button Content="1000" Width="60" Margin="5" Click="FixedAmount_Click"/>
+                <Button Content="2000" Width="60" Margin="5" Click="FixedAmount_Click"/>
+                <Button Content="3000" Width="60" Margin="5" Click="FixedAmount_Click"/>
+                <Button Content="5000" Width="60" Margin="5" Click="FixedAmount_Click"/>
+                <Button Content="10000" Width="60" Margin="5" Click="FixedAmount_Click"/>
+            </StackPanel>
+            <TextBlock Text="Or Enter Custom Amount:" FontSize="16" Margin="10,20,10,10"/>
+            <TextBox x:Name="WithdrawAmountTextBox" FontSize="16" Width="200" Margin="10" HorizontalAlignment="Center"/>
+            <Button Content="Withdraw" Width="100" Margin="10" Click="WithdrawButton_Click" HorizontalAlignment="Center"/>
+
+            <!-- Back Button -->
+            <Button Content="Back to Main Page" Click="BackToMain_Click" FontSize="16" Margin="10"/>
+        </StackPanel>
+        <Image Margin="136,256,136,10" Grid.RowSpan="2" Source="/CAPITALISMLOGO-removebg-preview.png" Stretch="Fill"/>
+    </Grid>
+</Window>
