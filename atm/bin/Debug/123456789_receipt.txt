@@ -1,2 +1,0 @@
-Deposit: 2000
-New Balance: 100716.50

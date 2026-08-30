@@ -1,2 +1,0 @@
-Withdraw: 1000
-New Balance: 1500.25
